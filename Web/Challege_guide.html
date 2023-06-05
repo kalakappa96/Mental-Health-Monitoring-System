@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mental Health Guide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .content {
+      text-align: justify;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-top: 120px; 
+    }
+
+    h1 {
+      color: #3b792a; 
+      font-family: 'Helvetica', sans-serif; 
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    h2 {
+      color:#3b792a; 
+      font-family: 'Arial', sans-serif;
+      font-size: 22px; 
+      font-weight: bold;
+    }
+
+    p {
+      font-family: 'Georgia', serif; 
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+    
+    .header {
+      background-size: 300px 100px;
+      padding: 0.5rem ;
+      position: fixed;
+      top: 0; 
+      left: 0; 
+      right: 0;
+      box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: lightgray;
+      z-index: 10000000;
+    }
+
+    .header .logo {
+      font-size: 2rem; 
+      color: rgb(2, 17, 2);
+      text-decoration: none; 
+    }
+
+    .header .logo i {
+      color: rgb(48, 107, 49);
+      font-size: 20px;
+    }
+
+    .header .navbar a {
+      font-size: 1rem;
+      color: var(--box-shadow);
+      margin-left: 1rem;
+    }
+
+    .header .navbar a:hover {
+      color: var(--green);
+    }
+
+    .back-button {
+      background-color: #184d18;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background-color: #94551b;
+    }
+    .footer {
+      text-align: center;
+      background-color: lightgray;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .footer p {
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <i class='fas fa-head-side-virus' style='font-size:60px;'></i>
+      Mental Health
+    </a>
+    <nav>
+      <button class="back-button" onclick="goBack()">&#8592; Back</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="content">
+        <img src="image/w1600.png" alt="Mental Health Image" style="max-width: 100%; height: auto;">
+
+      <h1><u>5 Ways to Challenge Negative Thoughts</u></h1>
+      <p>Negative thinking can be very harmful for us. When these thoughts build and build, they can often lead to anxiety or depression. It’s important that we learn effective ways to challenge negative thoughts. This can help us live a more positive, fulfilled life. Here are our top tips for challenging negative thoughts:</p>
+      <br>
+      <h2>1. Understand Your Thought Patterns</h2>
+      <p>There are many different types of negative thinking patterns we might use. Some common ones include:</p>
+      <ul>
+        <li>Black and white thinking - where we see everything as one way or another, with no in between</li>
+        <li>Personalizing - where we assume that we are to blame for anything that goes wrong (this doesn’t take into account other factors that don’t have to do with us)</li>
+        <li>Filter thinking - where we choose to only see the negative side of things</li>
+        <li>Catastrophizing - assuming the worst possible outcome will happen</li>
+      </ul>
+      <p>When we can recognize these negative thinking patterns, we can then replace them with more helpful thinking patterns.</p>
+      <br>
+      <h2>2. Practice Mindfulness</h2>
+      <p>Mindfulness practices, like meditation, can help us focus on the present, rather than dwelling on events of the past or worrying about the future. It can also help decenter us, so that we can gain distance from depressive thoughts and feelings. When we detach ourselves from negative thoughts, we can view them as an outside observer and challenge them easier.</p>
+      <h2>3. Start a Thought Diary</h2>
+      <p>Another way to stop negative thoughts in their tracks is to keep a thought diary. We can use this tool to identify our negative thinking styles and gain a better understanding of how our thoughts can cause our emotional reactions.</p>
+  
+      <h2>4. Focus on Gratitude</h2>
+      <p>Challenge negative thoughts by focusing on gratitude. When we are in a negative headspace, it can sometimes be difficult to think about what we’re grateful for. Regardless, try thinking about three things you’re grateful for each day, even if they are really small. When we focus on gratitude, we are more likely to also adopt a more positive mindset.</p>
+  
+      <h2>5. Seek Professional Help</h2>
+      <p>Lastly, if you need more support in managing your negative thoughts, seek out professional help from a therapist. We can talk to our friends and family to help us gain perspective, but sometimes we may also need the support of a mental health professional to give us more tools to change our thinking. You can request an appointment with one of our compassionate therapists here.</p>
+  
+      <h2>Other Helpful Articles</h2>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2023 Created by SDMCET Students.</p>
+  </footer>
+
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+  
+</body>
+</html>
