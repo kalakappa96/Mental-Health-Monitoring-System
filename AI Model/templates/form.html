@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mental Health Predictor</title>
+    <link rel="stylesheet" href="static/css/styles-form.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles-form.css" />
+    <link rel="icon" href="css/images/favicon-16x16.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="form-top" name="form-top">
+    <h1>Mental Health Prediction</h1>
+    <hr />
+    <form method="POST" action="{{ url_for('submit_form') }}">
+       
+
+
+      <div class="form-group col-md-2">
+        <label for="inputStudent">1.Are You Student ?</label>
+        <select id="inputStudent" name="inputStudent" class="form-control">
+          <option>Select</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        </div><br>
+      <div class="form-group col-md-5">
+      <label for="inputGender">2.Gender</label>
+      <select id="inputGender" name="inputGender" class="form-control">
+        <option>Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </div><br>  
+      <div class="form-group col-md-5">
+      <label for="inputFeelingn">3.Are you feeling nervous, anxious, or on edge ?</label>
+      <select id="inputFeelingn" name="inputFeelingn" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputControlw">4.Are you feeling unable to stop or control worrying ?</label>
+      <select id="inputControlw" name="inputControlw" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputDifferent">5.Are you worrying too much about different things ?</label>
+      <select id="inputDifferent" name="inputDifferent" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputRestless">6.Are you so restless that it is hard to sit still ?</label>
+      <select id="inputRestless" name="inputRestless" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputIrritable">6.Are you feeling easily annoyed or irritable ?</label>
+      <select id="inputIrritable" name="inputIrritable" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputSomethinga">7.Are you feeling as if something awful might happen ?</label>
+      <select id="inputSomethinga" name="inputSomethinga" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputPhysicalp">8.Are You having unexplained Physical problems, Such as back pain Or Headaches ?</label>
+      <select id="inputPhysicalp" name="inputPhysicalp" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputTroublec">9.Are you having trouble concentrating on things such as reading the newspaper or Concentration on Study or watching TV ?</label>
+      <select id="inputTroublec" name="inputTroublec" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <!-- <div class="form-group col-md-5">
+      <label for="inputTroublec">9.Are you having trouble concentrating on things such as reading the newspaper or Concentration on Study or watching TV ?<label>
+      <select id="inputTroublec" name="inputTroublec" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br> -->
+    <div class="form-group col-md-5">
+      <label for="inputFeelingb">10.Are you feeling bad about yourself (ex. feel like a failure or constantly let your family down) ?</label>
+      <select id="inputFeelingb" name="inputFeelingb" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputLossi">11.Are you feeling like Loss of interest  all normal activities such as Sports or Hobbies ?</label>
+      <select id="inputLossi" name="inputLossi" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputFeelingt">12.Are you feeling tiredness and having little energy ?</label>
+      <select id="inputFeelingt" name="inputFeelingt" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+     </select>
+    </div><br>
+       <div class="form-group col-md-5">
+      <label for="inputTroublef">13.Are you having trouble falling or staying asleep, or sleeping too much ?</label>
+      <select id="inputTroublef" name="inputTroublef" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputFeelingg">14.Are you feelings of worthlessness OR Guilt, Fixating on past failures OR Self-blame ?</label>
+      <select id="inputFeelingg" name="inputFeelingg" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+    <div class="form-group col-md-5">
+      <label for="inputSuicidalt">15.Are you having thoughts that you would be better off dead or Suicidal thoughts ?</label>
+      <select id="inputSuicidalt" name="inputSuicidalt" class="form-control">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div><br>
+   
+    <button type="submit" class="btn btn-primary">Predict</button>
+    <button type="reset" class="btn btn-primary">Clear All</button>
+    <p>If the Predictor gives Output as "Yes" <br>It is advised to get a Mental Health Treatment<br>So Please take care of you self. <br>Visit to your Nearest psychiatrist doctor ASAP.  </p>
+  </form>
+  </section>
+  </body>
+</html>
+
+

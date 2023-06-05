@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Assessment Results</title>
+    <link rel="stylesheet" href="static/css/styles1.css">
+
+</head>
+<body>
+    <h1><u> Health Assessment Results </u></h1>
+   
+    {% if message == "Depression" %}
+      <h2>You have Depression Problems. Kindly, Visit to the nearest Psychiatrist Doctor.</h2>
+    {% elif message == "Anxiety" %}
+      <!-- <h2>You have Anxiety Problems. Kindly, Visit to the nearest Psychiatrist Doctor.</h2> -->
+      <h2>You have Anxiety Problems.. <br><p>it is recommended that you visit the nearest Psychiatrist Doctor OR try meditation to help and manage your symptoms.</p></h2>
+    {% else %}
+      <h2>You do not have any Mental Health Problems. <br>To maintain good mental health, we suggest you try to meditation.</h2>
+    {% endif %}
+    <!-- {% if Treatment == "Yes" %}
+        <h2>You have Depression Problems. Kindly, Visit to nearest Psychiatrist Doctor.</h2>
+    {% elif Treatment == "No" %}
+        <h2>You have Anxiety Problems. Kindly, Visit to nearest Psychiatrist Doctor.</h2>
+    {% else %}
+        <h2>You do not have any Mental Health Problems.</h2>
+    {% endif %} -->
+
+    <div style="margin-top: 30px;">
+        <a href="{{ url_for('show_form') }}" class="btn btn-primary">Retake-Assessment</a> 
+        <a href="http://localhost/MentalHealth/MentalHealth/hms/book-appointment.php" class="btn btn-primary">Consult a doctor </a>
+    </div>
+</body>
+</html>
+.
